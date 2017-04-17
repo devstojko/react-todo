@@ -8,9 +8,8 @@ describe('Reducers', () => {
     it('should set searchText', () => {
       var action = {
         type: 'SET_SEARCH_TEXT',
-        searchText: 'text'
+        searchText: 'dog'
       };
-
       var res = reducers.searchTextReducer(df(''), df(action));
 
       expect(res).toEqual(action.searchText);
@@ -22,7 +21,6 @@ describe('Reducers', () => {
       var action = {
         type: 'TOGGLE_SHOW_COMPLETED'
       };
-
       var res = reducers.showCompletedReducer(df(false), df(action));
 
       expect(res).toEqual(true);
@@ -33,9 +31,8 @@ describe('Reducers', () => {
     it('should add new todo', () => {
       var action = {
         type: 'ADD_TODO',
-        text: 'some text'
+        text: 'Walk the dog'
       };
-
       var res = reducers.todosReducer(df([]), df(action));
 
       expect(res.length).toEqual(1);
@@ -45,12 +42,11 @@ describe('Reducers', () => {
     it('should toggle todo', () => {
       var todos = [{
         id: '123',
-        text: 'some text',
+        text: 'Something',
         completed: true,
         createdAt: 123,
-        completedAt: 125,
+        completedAt: 125
       }];
-
       var action = {
         type: 'TOGGLE_TODO',
         id: '123'

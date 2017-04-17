@@ -7,7 +7,6 @@ var TodoSearch = React.createClass({
 
     this.props.onSearch(showCompleted, searchText);
   },
-
   render: function () {
     return (
       <div className="container__header">

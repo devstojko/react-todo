@@ -5,8 +5,7 @@
   padding: 1rem;
   transition: background .3s ease;
 
-  p,
-  input {
+  p, input {
     margin: 0;
   }
 
@@ -15,18 +14,17 @@
   }
 
   &:hover {
-    background: #f2f2f2;
+    background: #f0f0f0;
   }
+}
 
-  &__subtext {
-    color: #999;
-  }
+.todo__subtext {
+  color: #999;
+}
 
-  &-completed {
-    p,
-    .todo-subtext {
-      color: $light-color;
-      text-decoration: line-through;
-    }
+.todo-completed {
+  p, .todo-subtext {
+    color: $light-color;
+    text-decoration: line-through;
   }
 }
