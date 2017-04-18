@@ -8,14 +8,18 @@ var actions = require('actions');
 var store = require('configureStore').configure();
 var TodoAPI = require('TodoAPI');
 
-store.subscribe(() => {
-  var state = store.getState();
-  console.log('New state', state);
-  TodoAPI.setTodos(state.todos);
-});
+// store.subscribe(() => {
+//   var state = store.getState();
+//   console.log('New state', state);
+//   TodoAPI.setTodos(state.todos);
+// });
 
-var initialTodos = TodoAPI.getTodos();
-store.dispatch(actions.addTodos(initialTodos));
+// var initialTodos = TodoAPI.getTodos();
+// store.dispatch(actions.addTodos(initialTodos));
+
+// Create acync call to featch data from firebase
+store.dispatch(actions.startAddTodos());
+
 
 // Load foundation
 $(document).foundation();
