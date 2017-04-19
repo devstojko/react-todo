@@ -20,7 +20,6 @@ var TodoAPI = require('TodoAPI');
 // Create acync call to featch data from firebase
 store.dispatch(actions.startAddTodos());
 
-
 // Load foundation
 $(document).foundation();
 
