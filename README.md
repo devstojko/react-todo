@@ -1,32 +1,23 @@
 # React Todo App
-
 ## Project Description
-This is a simple todo app built with React.
-
+A simple todo list application with basic CRUD operations, using local storage for data persistence.
 ## Tech Stack
-- React
-- JavaScript
-- Webpack
-
-## Dependencies
-- axios
-- babel-core
-- babel-loader
-- babel-preset-es2015
-- babel-preset-react
-- babel-preset-stage-0
-
+* TypeScript
+* React
+* CSS
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/devstojko/react-todo.git`
 2. Install dependencies: `npm install`
-3. Start the app: `npm start`
-
+3. Start the application: `npm start`
 ## Project Structure
-- `app/`: React app components
-- `public/`: Public assets
-- `playground/`: Development playground
-
+The project consists of the following directories and files:
+* `app`: Application source code
+* `public`: Publicly accessible files
+* `package.json`: Project dependencies and scripts
+* `README.md`: This file
 ## Features
-- Todo list
-- Add new todo items
-- Delete todo items
+* Create new todos
+* Read and display existing todos
+* Update existing todos
+* Delete todos
+* Local storage for data persistence
